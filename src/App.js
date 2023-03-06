@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// import './index.css';
 import './App.css';
+import Header from './components/Header/header';
+// import Social from './components/Home/social';
+import Home from './components/Home/home';
+import About from './components/About/about';
+import Skill from './components/Skill/skill';
+import Qualification from './components/Qualification/qualification';
+import Portfolio from './components/Portfolio/portfolio';
+import Contact from './components/Contact/contact';
+import Footer from './components/Footer/footer';
+// import "leaflet/dist/leaflet.css";
 
-function App() {
+// import reportWebVitals from './reportWebVitals';
+
+const App = () => {
+  
+  //  document.designMode="on";
+
+      
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+     <Header/>
+    <main className='main'>
+    <Home/>
+    <About/>
+    <Skill/>
+    <Qualification/>
+    <Portfolio/>
+    <Contact/>
+    <Footer/>
+    {/* <Social/> */}
+    </main>
+    </>
   );
 }
 

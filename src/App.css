@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Itim', cursive;
+    /* background-color: blueviolet; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+    scroll-behavior: smooth;
   }
+
+.dark-theme{
+  
+    --header-bg :  hsl(0, 1%, 14%);
+    --main-bg :  hsl(0, 0%, 19%);
+    --footer-bg : hsl(0, 1%, 14%);
+    --title-color :  hsl(30, 2%, 84%);
+    --subtitle-color :  #08fdd8 ;
+    --body-color : hsl(30, 2%, 84%);
+    --form-bg :  hsl(0, 1%, 33%);
+    --html-tag : hsl(0, 1%, 40%);
+    --skill-bar :  hsl(40, 1%, 55%);
+    --form-text-bg :hsl(0, 1%, 33%);
+    --button-color: hsl(0, 0%, 0%);
+    /* --button-bg:  hsl(0, 0%, 83%); */
+    
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light-theme{
+    
+    --header-bg :  hsl(0, 5%, 92%);
+    --main-bg :  hsl(0, 2%, 70%);
+    --footer-bg :  hsl(0, 5%, 92%);
+    --subtitle-color :  #08fdd8 ;
+    --html-tag: hsl(0, 0%, 45%);
+    --skill-bar :  hsl(0, 0%, 100%);
+    --form-text-bg :hsl(0, 0%, 76%);
+
+
+    --button-bg:  hsl(0, 1%, 14%);
+    --button-color: hsl(0, 0%, 0%);
+    
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.html-tag{
+    position: absolute;
+    color: var(--html-tag );
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 1rem;
+    /* font-family: 'Roboto', sans-serif; */
+    /* display: none; */
 }
